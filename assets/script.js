@@ -9,7 +9,7 @@ var now = parseInt(moment().format("H"));
 
 
 $.each(timeBlock, function (i, hour) {
-    var hourID = parseInt($(this).attr("id"));
+     var hourID = parseInt($(this).attr("id"));
     if (hourID === now) {
         $(this).next().addClass("present");
     }else if (hourID < now) {
